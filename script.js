@@ -8,7 +8,7 @@ const projets = [
   },
   {
     titre: "Thermostat ESP32",
-    desc: "Thermostat connecté pour piloter le chauffage électrique, intégré à Home Assistant.",
+    desc: "Thermostat connecté sur ESP32 : mesure de température, régulation du chauffage électrique, pilotage à distance via Home Assistant.",
     techs: ["ESP32", "C/C++", "Home Assistant"],
     lien: "https://github.com/titouandup"
   },
