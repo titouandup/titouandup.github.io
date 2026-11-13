@@ -4,7 +4,7 @@ const projets = [
     titre: "Homelab Proxmox",
     desc: "Serveur auto-hébergé sous Proxmox : streaming, photos, mots de passe, DNS filtrant et domotique, accessible à distance de façon sécurisée.",
     techs: ["Proxmox", "Linux", "Docker", "Tailscale", "Reverse proxy"],
-    lien: "https://github.com/titouandup"
+    lien: "https://github.com/titouandup/homelab"
   },
   {
     titre: "Thermostat ESP32",
