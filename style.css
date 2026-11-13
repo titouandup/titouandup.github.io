@@ -1,0 +1,169 @@
+:root {
+  --bg: #f6f4ef;
+  --text: #16161a;
+  --muted: #6b6b73;
+  --line: #d9d6cc;
+  --accent: #ff5a36;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Hero */
+header {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8vw;
+  border-bottom: 1px solid var(--line);
+}
+
+header h1 {
+  font-size: clamp(4rem, 16vw, 12rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+header h1::after {
+  content: ".";
+  color: var(--accent);
+}
+
+/* Sections en 2 colonnes : titre à gauche, contenu à droite */
+main {
+  padding: 0 8vw;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+h2 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+}
+
+section > *:not(h2) {
+  grid-column: 2;
+}
+
+section > h2 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+section p {
+  font-size: 1.35rem;
+  max-width: 34em;
+}
+
+/* Projets */
+article {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--text);
+  transition: padding-left 0.25s ease;
+}
+
+article:hover {
+  padding-left: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+h4 {
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0.75rem;
+}
+
+article p {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+/* Compétences */
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+  border-bottom: 1px solid var(--line);
+  padding: 0.4rem 0;
+  transition: color 0.2s, padding-left 0.25s;
+}
+
+li:hover {
+  color: var(--accent);
+  padding-left: 0.75rem;
+}
+
+/* Contact */
+a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+section#contact p {
+  font-size: 1.15rem;
+}
+
+main section:last-child {
+  border-bottom: none;
+  padding-bottom: 8rem;
+}
+
+@media (max-width: 700px) {
+  section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 3rem 0;
+  }
+
+  section > *:not(h2),
+  section > h2 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+}
