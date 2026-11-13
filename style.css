@@ -167,3 +167,29 @@ main section:last-child {
     font-size: 1.5rem;
   }
 }
+
+/* Cartes projets générées par JS */
+article p {
+  margin-bottom: 1rem;
+}
+
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  padding: 0.1rem 0.7rem;
+}
+
+article a {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
