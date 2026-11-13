@@ -44,4 +44,16 @@ function carteProjet(p) {
     </article>`;
 }
 
+function carteCompetence(c) {
+  return `
+    <article class="carte">
+      <div class="carte-contenu">
+        <h3>${c.categorie}</h3>
+        <div class="techs">${badges(c.items)}</div>
+      </div>
+    </article>`;
+}
+ 
 document.getElementById("liste-projets").innerHTML = projets.map(carteProjet).join("");
+document.getElementById("liste-competences").innerHTML = competences.map(carteCompetence).join("");
+ 
