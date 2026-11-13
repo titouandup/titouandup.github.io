@@ -39,7 +39,7 @@ function carteProjet(p) {
         <h3>${p.titre}</h3>
         <p>${p.desc}</p>
         <div class="techs">${badges(p.techs)}</div>
-        <a href="${p.lien}">Voir le code →</a>
+        <a href="${p.lien}" target="_blank" rel="noopener noreferrer">Voir le code →</a>
       </div>
     </article>`;
 }
