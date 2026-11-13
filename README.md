@@ -28,12 +28,6 @@ script.js    Données des projets et compétences, génération des cartes
 
 Les projets et les compétences sont des tableaux (`projets` et `competences`) en haut de `script.js`. Pour en ajouter un, il suffit d'ajouter un objet au tableau : les cartes sont générées automatiquement.
 
-## Lancer en local
+## Déploiement
 
-Ouvrir `index.html` dans un navigateur, ou lancer un petit serveur :
-
-```
-python3 -m http.server
-```
-
-puis aller sur http://localhost:8000.
+Site publié avec GitHub Pages : https://titouandup.github.io
