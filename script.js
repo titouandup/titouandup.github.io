@@ -20,6 +20,13 @@ const projets = [
   }
 ];
 
+const competences = [
+  { categorie: "Langages", items: ["C", "C++", "JavaScript", "PHP", "HTML/CSS", "Bash"] },
+  { categorie: "Embarqué", items: ["STM32", "ESP32", "UART", "arm-none-eabi-gcc"] },
+  { categorie: "Système", items: ["Linux", "Proxmox", "Docker", "Git"] }
+];
+
+
 function badges(techs) {
   return techs.map((t) => `<span class="badge">${t}</span>`).join("");
 }
