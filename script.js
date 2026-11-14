@@ -1,6 +1,12 @@
 //Tableau liste des projets
 const projets = [
   {
+    titre: "Dashboard Homelab",
+    desc: "Page publique de supervision de mon serveur : état des services en temps réel, vérifiés côté serveur en PHP. Exposée en HTTPS, sans aucune adresse interne révélée.",
+    techs: ["PHP", "cURL", "Docker", "Nginx Proxy Manager"],
+    lien: "https://github.com/titouandup/dashboard-homelab"
+  },
+  {
     titre: "Homelab Proxmox",
     desc: "Serveur auto-hébergé sous Proxmox : streaming, photos, mots de passe, DNS filtrant et domotique, accessible à distance de façon sécurisée.",
     techs: ["Proxmox", "Linux", "Docker", "Tailscale", "Reverse proxy"],
