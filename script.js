@@ -2,8 +2,8 @@
 const projets = [
   {
     titre: "Dashboard Homelab",
-    desc: "Page publique de supervision de mon serveur : état des services en temps réel, vérifiés côté serveur en PHP. Exposée en HTTPS, sans aucune adresse interne révélée.",
-    techs: ["PHP", "cURL", "Docker", "Nginx Proxy Manager"],
+    desc: "Page de supervision de mon homelab Proxmox : état des services, charge du serveur en direct et historique sur 24 h. Les mesures sont enregistrées toutes les 5 minutes par une tâche planifiée, puis affichées dans un graphique qui montre aussi les pannes.",
+    techs: ["PHP", "SQLite", "JavaScript", "Chart.js", "Docker", "cron"],
     lien: "https://github.com/titouandup/dashboard-homelab"
   },
   {
